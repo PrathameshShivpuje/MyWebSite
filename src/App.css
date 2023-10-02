@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+
+body {
+  color: white; /* Set the text color to white for the entire page */
+  font-family: 'Poppins', sans-serif !important ; /* Use the 'Poppins' font */
+  font-weight: bold !important; /* Make the text bold */
+}
+
+h1, h2, h3, p, a {
+  font-family: 'Poppins', sans-serif; /* Use the 'Poppins' font */
+  font-weight: bold; /* Make the text bold */
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +27,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0a0a0a;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +48,80 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.app {
+  display: flex;
+  flex-direction: row; /* Display content in a row */
+  justify-content: flex-start; /* Align content to the left side */
+  height: 100vh; /* Set the height of the entire container to 100% viewport height */
+}
+
+.header {
+  
+  flex-grow: 0; /* Allow the header to grow only as needed */
+  flex-shrink: 0; /* Prevent the header from shrinking */
+  flex-basis: 20%; /* Set the initial width of the header */
+  flex: 0 0 20%; /* Set the header width as a percentage of the viewport width */
+  background-color: #000000; /* Set the background color */
+  color: #fff; /* Set the text color */
+  padding: 20px; /* Add padding for spacing */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  font-size: 20px;
+}
+
+.main-content {
+  flex: 1; /* Allow the content to expand and fill the available space */
+  padding: 20px; /* Add some padding for spacing */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+/* Define hover effect for list items */
+.menu-item:hover {
+  background-color: #333; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+/* App.css */
+
+/* Define hover effect for list items */
+.menu-item {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; /* Add pointer cursor on hover */
+}
+
+.menu-item a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 1;
+}
+
+.menu-item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #233469; /* Initial background color */
+  z-index: 0;
+  opacity: 0; /* Initially transparent */
+  transition: opacity 0.3s ease;
+}
+
+.menu-item:hover:before {
+  opacity: 1; /* Show the background on hover */
+}
+
+.menu-item:hover a {
+  background-color: #333; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+  transform: scale(1.05); /* Add a subtle zoom-in effect on hover */
 }
