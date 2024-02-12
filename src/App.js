@@ -21,7 +21,7 @@ function App() {
           <Content sectionId="about" title={<><i className="fas fa-user"></i> About Me</>}>
             {/* Add your details here*/}
             <span style={{ color: '#8c9cb0' }}>
-            <p>Experienced DevOps Engineer with 2+ years of hands-on experience in Jenkins, 
+            <p>Experienced DevOps Engineer around 3 years of hands-on experience in Jenkins, 
                   Continuous Integration and Continuous Deployment (CI/CD), GitHub, Urban Code 
                   Deploy, and SonarQube. Proficient in utilizing ELK, Dynatrace, and MoogSoft for 
                   effective monitoring and troubleshooting. Strong knowledge of an Terraform, Docker, 
@@ -32,7 +32,7 @@ function App() {
           </Content>
           <Content sectionId="employment" title={<><i className="fas fa-briefcase"></i> Employment History</>}>
             {/* Add your employment history content here */}
-            <h3>Senior Software Enginner, Capgemini, Pune/Hyderabad</h3>
+            <h3>Associate Consultant, Capgemini, Pune/Hyderabad</h3>
             <h4>0 6 / 2 0 2 1 - P r e s e n t</h4>
             <span style={{ color: '#8c9cb0' }}>
             <p>
