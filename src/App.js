@@ -21,7 +21,7 @@ function App() {
           <Content sectionId="about" title={<><i className="fas fa-user"></i> About Me</>}>
             {/* Add your details here*/}
             <span style={{ color: '#8c9cb0' }}>
-            <p>Experienced DevOps Engineer around 3 years of hands-on experience in Jenkins, 
+            <p>Experienced DevOps Engineer as 3 years of hands-on experience in Jenkins, 
                   Continuous Integration and Continuous Deployment (CI/CD), GitHub, Urban Code 
                   Deploy, and SonarQube. Proficient in utilizing ELK, Dynatrace, and MoogSoft for 
                   effective monitoring and troubleshooting. Strong knowledge of an Terraform, Docker, 
